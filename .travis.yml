@@ -5,4 +5,4 @@ jobs:
         include:
                 - stage: default build 
                   script:
-                        - auto/configure && make && make test
+                        - auto/configure && make
