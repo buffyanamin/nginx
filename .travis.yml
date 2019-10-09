@@ -1,1 +1,8 @@
 language: c
+compiler: clang
+
+jobs:
+        include:
+                - stage: default build 
+                  script:
+                        - auto/configure && make && make test
