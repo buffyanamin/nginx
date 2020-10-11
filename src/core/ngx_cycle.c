@@ -112,7 +112,6 @@ ngx_init_cycle(ngx_cycle_t *old_cycle)
         return NULL;
     }
 
-
     n = old_cycle->paths.nelts ? old_cycle->paths.nelts : 10;
 
     if (ngx_array_init(&cycle->paths, pool, n, sizeof(ngx_path_t *))
@@ -123,7 +122,6 @@ ngx_init_cycle(ngx_cycle_t *old_cycle)
     }
 
     ngx_memzero(cycle->paths.elts, n * sizeof(ngx_path_t *));
-
 
     if (ngx_array_init(&cycle->config_dump, pool, 1, sizeof(ngx_conf_dump_t))
         != NGX_OK)

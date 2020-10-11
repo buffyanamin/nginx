@@ -8,6 +8,8 @@
 #ifndef _NGX_HTTP_REQUEST_H_INCLUDED_
 #define _NGX_HTTP_REQUEST_H_INCLUDED_
 
+#include "../core/ngx_core.h"
+
 
 #define NGX_HTTP_MAX_URI_CHANGES           10
 #define NGX_HTTP_MAX_SUBREQUESTS           50

@@ -1,0 +1,12 @@
+objs
+src/core
+src/event
+src/event/modules
+src/http
+src/http/modules
+src/http/modules/perl
+src/http/v2
+src/mail
+src/os/unix
+src/os/win32
+src/stream
