@@ -11,6 +11,8 @@
 
 #include <ngx_setaffinity.h>
 #include <ngx_setproctitle.h>
+#include <ngx_socket.h>
+#include <ngx_core.h>
 
 
 typedef pid_t       ngx_pid_t;
