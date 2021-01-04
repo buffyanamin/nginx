@@ -67,7 +67,7 @@ struct ngx_cycle_s {
     ngx_list_t                open_files;
     ngx_list_t                shared_memory;
 
-    ngx_uint_t                connection_n;
+    ngx_uint_t                connection_n;	// maximum allowed connections
     ngx_uint_t                files_n;
 
     ngx_connection_t         *connections;

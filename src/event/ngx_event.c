@@ -216,6 +216,9 @@ ngx_process_events_and_timers(ngx_cycle_t *cycle)
     }
 
     if (ngx_use_accept_mutex) {
+        /*
+         * ngx_enable_accept_events not been called, so nothing happened
+         */
         if (ngx_accept_disabled > 0) {
             ngx_accept_disabled--;
 
